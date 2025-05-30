@@ -30,5 +30,22 @@ print(data.iloc[0])
 #print(data[data.isnull().any(axis=1)])  # Displays rows with at least one null value
 
 # %% 
+# Convert the 'Date' column to datetime format
+data['Date'] = pandas.to_datetime(data['Date'])
 
+# Sort the data by date
+data = data.sort_values(by='Date')
 
+data_2015 = data[data['Date'].dt.year == 2015]
+
+# Plot the average price over time
+plt.figure(figsize=(10, 6))
+plt.plot(data_2015['Date'], data_2015['AveragePrice'], label='Average Price (2015)', color='green')
+plt.title('Average Price Over Time (2015)')
+plt.xlabel('Date')
+plt.ylabel('Average Price')
+plt.legend()
+plt.grid()
+plt.show()
+
+# %%
