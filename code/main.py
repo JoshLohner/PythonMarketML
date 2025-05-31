@@ -30,10 +30,8 @@ print(data.iloc[0])
 #print(data[data.isnull().any(axis=1)])  # Displays rows with at least one null value
 
 # %% 
-# Convert the 'Date' column to datetime format
-data['Date'] = pandas.to_datetime(data['Date'])
 
-# Sort the data by date
+data['Date'] = pandas.to_datetime(data['Date'])
 data = data.sort_values(by='Date')
 
 data_2015 = data[data['Date'].dt.year == 2015]
