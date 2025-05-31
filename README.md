@@ -1,11 +1,7 @@
-To activate the virtual environment: venv\Scripts\activate
+# Market Analysis using PyTorch on a Kaggle Avocado Market Dataset
 
-Kaggle data set:
-https://www.kaggle.com/datasets/neuromusic/avocado-prices
+## Questions I Want To Ask
 
-
-
-Questions I want to ask:
 1. Regression Tasks
 Predict the average price of avocados based on features like total volume, type, and region.
 Model: Feedforward Neural Network (FNN) or Sequential Model.
@@ -30,3 +26,10 @@ Example Question: "Are there any anomalies in avocado sales data for a specific 
 Recommend regions or types of avocados to focus on for marketing based on sales data.
 Model: Collaborative Filtering or Neural Networks.
 Example Question: "Which type of avocado should be promoted in a specific region based on historical sales?"
+
+## Helpful Bits
+
+- To activate the virtual environment: venv\Scripts\activate
+
+- Kaggle data set:
+https://www.kaggle.com/datasets/neuromusic/avocado-prices

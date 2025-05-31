@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
     
-file_path = "avocado.csv"  # Replace with your CSV file path
+file_path = "data/avocado.csv"  # Replace with your CSV file path
 data = pandas.read_csv(file_path)
 
 # %% Print Columns
